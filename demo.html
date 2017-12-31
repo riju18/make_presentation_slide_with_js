@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/blood.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+					<section id="transitions">
+							<h2>click anyitem</h2>
+							<p>
+								<br>
+								<a href="?transition=none#/transitions">None</a> -
+								<a href="?transition=fade#/transitions">Fade</a> -
+								<a href="?transition=slide#/transitions">Slide</a> -
+								<a href="?transition=convex#/transitions">Convex</a> -
+								<a href="?transition=concave#/transitions">Concave</a> -
+								<a href="?transition=zoom#/transitions">Zoom</a>
+							</p>
+					</section>		
+				<section>
+					<h1>Yeah  !!!!!! jsvascript</h1>
+					<h3>world's best front-end developing language</h3>
+					<p>
+						<small>Created by <a href="https://github.com/riju18" target="_blank">Riju Chowdhury</a> with <a href="https://revealjs.com/#/" target="_blank">Reveal.js</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2 style="font-family:monospace;font-size:50px">Why I love javascript</h2>
+					<p>
+						Now it's can be used as both front-end & backend language; 
+					</p>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>How:</h2>
+						<p>We can use node.js</p>
+						<p>which use chrome V8 runtime engine,non-blocking I/O model & lightweight</p>
+						<br>
+						<p>press spacebar</p>
+					</section>
+					<section>
+						<h2>we can use [mongoDB]</h2>
+						<p>-As a database-</p>
+					</section>
+					<section>
+						<h2>Library</h2>
+						<p>There are more & more framework,library is built on js</p>
+						<p>such as-chart,data visualization e.t.c & even this presentation.</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>Want to see all slides at a time</h2>
+					<p>
+						Press <strong>ESC</strong>.
+					</p>
+				</section>
+
+				<section>
+					<h2>Want to Zoom in</h2>
+					<p>
+						Press <strong>Alt+click</strong>.
+					</p>
+				</section>
+
+				<section>
+					<h2>Want to Zoom out</h2>
+					<p>
+						Press <strong>Alt+click</strong>.
+					</p>
+				</section>
+
+				<section>
+					<section id="fragments">
+						<h2>Advantages</h2>
+						<p>it's shorten ur code;</p>
+						<p class="fragment">time consuming not at all;</p>
+						<p><span class="fragment">many buitin framewoks</span>
+
+						<aside class="notes">
+							This slide has fragments which are also stepped through in the notes window.
+						</aside>
+					</section>
+					<section>
+						<h2>Popular libraries</h2>
+						<p>There are bunch of libraries, such as-:</p>
+						<p class="fragment grow">Jquery {most popular}</p>
+						<p class="fragment shrink">angular js {developed by google}</p>
+						<p class="fragment fade-out">may be many more.....</p>
+						<p class="fragment fade-up">confused!!!!!!!</p>
+						<p class="fragment current-visible">U can start with jquery</p>
+						<p>I <span class="fragment highlight-red">personaly</span> <span class="fragment highlight-blue">have started</span> <span class="fragment highlight-green">with it</span></p>
+					</section>
+				</section>
+
+				<section>
+					<h2>sample Code</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+							$(document).ready(function () {
+								$("button").click(function () { 
+									var pro = document.getElementById("progress");
+									var width = 10;
+									var percent = setInterval(frame, 1000);
+									function frame() {
+										if ( width>=20 ) {
+											clearInterval(percent);
+										}
+										else{
+											width+=10;
+											pro.style.width = width + '%';
+											pro.innerHTML = width * 1 + '%' ; 
+										}
+									}
+								});
+								
+					</code></pre>
+					<p>a jquery example.</p>
+				</section>
+
+				<section>
+					<h2></h2>
+					<p>
+						 <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">Happy coding
+					</p>
+				</section>
+
+				<section style="text-align: left;">
+					<h1>THE END</h1>
+					<p>
+						- <a href="https://github.com/riju18">Follow me</a> <br>
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
